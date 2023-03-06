@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AG-ReID 2023 </title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">AG-ReID 2023</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dates">Important dates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dataset">Dataset</a></li>
+                <li class="nav-item"><a class="nav-link" href="#participate">Submit</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rules">Rules</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="about-section text-center bg-white" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Competition Description</h2>
+                <p class="text-white-50">
+                    AG-ReID 2023 marks the inaugural event of the AG-ReID series.
+                    It presents an exceptional opportunity for researchers to independently evaluate the
+                    state-of-the-art in aerial-ground person reID algorithms. The competition also provides an
+                    evaluation protocol that includes datasets of person images captured from aerial and ground
+                    views. Researchers can use this protocol after the competition to benchmark their own
+                    solutions against AG-ReID winners and baselines. AG-ReiD 2023 has officially been added to
+                    the competition list of <a href="https://ijcb2023.ieee-biometrics.org/call-for-competiton-proposals/">IJCB 2023</a> .
+                    <br><br>
+                    ***
+                    <br><br>
+                    This competition will have two parts:
+                    <br><br>
+                    <u>Part 1: "Algorithms-Self-Tested"</u> will require competitors to perform self-evaluation on a test dataset, which has never been published before and incorporates person in the wild samples. The dataset contains a total of 100,502 frames, captured using a variety of cameras, including a UAV flying at altitudes between 15 to 45 meters, a ground-based CCTV camera, and a wearable camera on smart glasses, all on a university campus. Additionally, 15 soft biometric traits for each of the 1,615 identities in the dataset are provided, making the task more challenging and comprehensive.
+                    <br><br>
+                    <u>Part 2: "Algorithms-Independently-Tested"</u> will focus on evaluating the software solutions submitted by competitors. The evaluation process will be conducted by the organizers on dataset that is similar to the one used in Part 1.
+                    <br><br>
+                    ***
+                    <br><br>
+                    Competitors can participate in one, two or all parts. For each part a separate winner demonstrating the best performance will be announced.
+                    Mean Average Precision (mAP) @k=1 will be used to assess the submissions.
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-white" id="dates">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Important Dates</h2>
+                <p class="text-white-50">
+                    <strong>Feb 27, 2023 (9:00 AM AEST) </strong>: Data is released to participants.<br>
+                    <strong>April 15, 2023 (9:00 AM AEST)</strong>: Participants deadline for submissions: self-evaluation results for Part 1, software submissions for Part 2.<br>
+                    <strong>May 8, 2023 (9:00 AM AEST)</strong>: Announcement of the top 25% participants<br>
+                    <strong>May 15, 2023 (9:00 AM AEST)</strong>: Human examination and baseline results ready; paper summarizing the competition submitted to IJCB. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-white" id="dataset">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">AG-ReID Dataset</h2>
+                <h3 class="text-white mb-4">Train</h3>
+                <p class="text-white-50">
+                There will be 51,530 training images in JPG format depicting 807 identities.
+                </p>
+                <h3 class="text-white mb-4">Test</h3>
+                <p class="text-white-50">
+                The test set comprises two subsets: <br>
+                1. Aerial to Ground: 808 ids | 4,348 query images | 19,259 gallery images. <br>
+                2. Ground to Aerial: 808 ids | 4,151  query images | 21,214 gallery images.
+                </p>
+                <h3 class="text-white mb-4"> Annotations</h3>
+                <p class="text-white-50">
+                    P0001T03220A1C3F01111: (image_id) file name in JPG format. <br>
+                    P0001T03220A1: (person_id) unique person ID. <br>
+                    C3: image was taken by a CCTV camera (Camera C3) <br>
+                    F01111: frame of video where image extracted from.<br>
+                    Two other types of cameras, an aerial camera (C0) and a wearable camera (C2).
+                    <br><br> *** <br><br>
+                    To download the dataset, first you need to register and log in to our <a href="https://www.kaggle.com/t/2018fa71974d4143a0306fd833bbaeaa">Kaggle competion website</a> , then select <a href="https://www.kaggle.com/competitions/ag-reid2023/data">data tab</a> from the top menu to download.
+                    <br>
+                    Note: Please read our <a href="https://www.kaggle.com/competitions/ag-reid2023/overview/privacy-policy">privacy and usage policy</a>  before download the dataset.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-white" id="participate">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">How To Participate</h2>
+                <p class="text-white-50">
+                    To participate in <strong>Part 1 -- "Algorithms-Self-Tested"</strong>:<br> Sign up and join AG-ReID competition on <a href="https://www.kaggle.com/t/2018fa71974d4143a0306fd833bbaeaa">Kaggle website </a> The dataset includes: (a) "bounding_box_train" dataset with correct labels presenting the format and nature of the test data; and (b) the actual "test" data including two settings "exp3_aerial_to_ground" and "exp6_ground_to_aerial", without ground truth labels. You will be asked
+                    to provide your rank-1 person_id for all of the test samples in the query, where the person_id can be extracted from the first 13 characters of image_id. The "test.csv" CSV file with the identities need to be sent by April 15 to Kaggle site
+                    to be considered in the competition. <strong>Important:</strong> the "test" data CANNOT be used in any way for training your algorithms. We trust in your fair evaluation. Only models pre-trained on ImageNet are permitted for fine-tuning. The usage of external data is prohibited except for the provided "qut_attribute_v8.mat" file contains soft-biometric attributes of all identities in the dataset.
+
+                    <br><br>
+
+                    To participate in <strong>Part 2 -- "Algorithms-Independently-Tested"</strong>:<br> Share your software algorithms with <a href="mailto:agreid2023@gmail.com">agreid2023@gmail.com</a> by April 15. Make sure it is compatible with Ubuntu operating system and provide clear instruction to install and test your algorithm. You can start with the <a href="https://github.com/JDAI-CV/fast-reid"> baseline code</a>.
+                   <strong>Important:</strong> the "test" data offered in Part 1 CANNOT be used in any way for training your algorithms.
+
+                      </p>
+            </div>
+        </div>
+    </div>
+</section>
+</p>
+
+<section class="about-section text-center bg-white" id="rules">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Rules</h2>
+                <p class="text-white-50">
+                    <strong class="text-white mb-4">General:</strong><br>
+                    1. Your name in the leaderboard should be in the format "Surname Name (place of study/organization)."
+                    <br>2. Participants must work on the problems individually.
+                    <br>3. There is a limit of 10 attempts per day.
+                    <br>4. Participants can only select two submissions at the end of the competition.
+                    <br> 5. Participants must exceed the medium baseline by April 15, 2023 (9:00 AM AEST). If the threshold is not exceeded by the specified deadline, the participant will be excluded from the rest of the competition.
+                    <br>6. Method description (One-page) must be submitted to <a href="mailto:agreid2023@gmail.com">agreid2023@gmail.com</a> within a week after the announcement of the top 25% participants on May 8, 2023 (9:00 AM AEST) if you want to be included in the summary paper submitted to IJCB2023 on May 15, 2023 (9:00 AM AEST).
+                    <br><strong class="text-white mb-4">Specific to this competition</strong>:<br>
+                    1. Only models pre-trained on ImageNet are permitted for fine-tuning.<br>
+                    2. The usage of external data is prohibited except for the provided `qut_attribute_v8.mat` file.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-white" id="organizers">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Organizers</h2>
+                <p class="text-white-50">
+                    <strong>Queensland University of Technology, Queensland, Australia</strong>:<br>
+                    <a href="https://www.qut.edu.au/about/our-people/academic-profiles/k.nguyenthanh">Dr. Kien Nguyen Thanh</a><br>
+                    <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.fookes">Prof. Clinton Fookes</a><br>
+                    <a href="https://www.qut.edu.au/about/our-people/academic-profiles/s.sridharan">Prof. Sridha Sridharan</a><br>
+                    <a href="https://www.linkedin.com/in/thanh-nhat-huy-nguyen-47b985252/">Thanh Nhat Huy Nguyen</a><br>
+
+                    <strong>Defence Science and Technology, Adelaide, Australia</strong>:<br>
+                    <a href="https://researchers.adelaide.edu.au/profile/dana.michalski">Dr. Dana Michalski</a><br>
+
+                    <strong>Michigan State University, Michigan, USA</strong>:<br>
+                    <a href="https://www.zobject.org">Dr. Feng Liu</a><br>
+                    <a href="https://www.cse.msu.edu/~liuxm/index2.html">Prof. Xiaoming Liu</a><br>
+                    <a href="https://www.egr.msu.edu/people/profile/rossarun">Prof. Arun Ross</a><br>
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-section bg-black" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Contact us if you have questions!</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"><a href="mailto:agreid2023@gmail.com">agreid2023@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; AG-ReID 2023</div></footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
